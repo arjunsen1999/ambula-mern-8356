@@ -5,7 +5,7 @@ export default function HeadingSection({heading}) {
   return (
     <>
       <Box mb={"20px"}>
-        <Heading as={"h1"}>{heading}</Heading>
+        <Heading fontSize={"4rem"} textAlign={"center"} color={"#0BC5EA"} >{heading}</Heading>
       </Box>
     </>
   );
