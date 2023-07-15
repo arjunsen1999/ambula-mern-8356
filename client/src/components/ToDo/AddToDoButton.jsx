@@ -13,6 +13,7 @@ import {
   Text
 } from "@chakra-ui/react";
 import { ToDoContext } from "../../features/ToDoContext";
+import notification from "../../Toast";
 
 export default function AddToDoButton() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -22,6 +23,7 @@ export default function AddToDoButton() {
 
   const handleClick = () =>{
     if(!title){
+      notification("error", "Enter the Title")
       return;
     }
     const data = {
