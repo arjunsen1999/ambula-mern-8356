@@ -36,13 +36,17 @@ import { IconType } from "react-icons";
 import { ReactText } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { BsCart } from "react-icons/bs";
+import {BiSolidContact} from "react-icons/bi"
+import {FcTodoList} from "react-icons/fc"
+import {AiOutlineInsertRowAbove} from "react-icons/ai"
+import {MdProductionQuantityLimits} from "react-icons/md";
 
 const LinkItems = [
   { name: "Home", icon: FiHome, link: "/home" },
-  { name: "About", icon: FiTrendingUp, link: "/about" },
-  { name: "ToDo", icon: FiCompass, link: "/todo" },
-  { name: "Product", icon: FiStar, link: "/product" },
-  { name: "Contact", icon: FiSettings, link: "/contact" },
+  { name: "About", icon: AiOutlineInsertRowAbove, link: "/about" },
+  { name: "ToDo", icon: FcTodoList, link: "/todo" },
+  { name: "Product", icon: MdProductionQuantityLimits, link: "/product" },
+  { name: "Contact", icon: BiSolidContact, link: "/contact" },
 ];
 
 export default function SideBar({ children }) {
